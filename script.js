@@ -26,6 +26,7 @@ submitButton.addEventListener("Click", function(event){
 
     const displayTextValue=document.createElement("p");
     displayTextValue.textContent = inputTextValue;
+    //displayTextValue.textContent = 'registtered number: ${inputTextValue}';
     console.log(displayTextValue);
 
     const displayNumberValue=document.createElement("p");
@@ -35,4 +36,8 @@ submitButton.addEventListener("Click", function(event){
     // send the value to scrren etc
     inputDisplay.appendChild(displayTextValue);
     inputDisplay.appendChild(displayNumberValue);
+
+    // nullify prevous values
+    inputText.value="";
+    inputNumber.value="";
 })
